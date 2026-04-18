@@ -84,6 +84,7 @@ class KaranChavan:
 | 💰 | [**Asset Pricing BL-MBTE**](https://github.com/KaranChavan21/Final-Project-Asset-Pricing-BL-MBTE) | Black-Litterman & model-based asset pricing research | `Jupyter` |
 | 🌾 | [**Smart Precision Agriculture**](https://github.com/KaranChavan21/SmartPrecisionAgricultureUsingIOT) | IoT system for real-time crop monitoring and automation | `C++` `IoT` |
 | 🎮 | [**Spaceship Game**](https://github.com/KaranChavan21/Spaceship-Game) | Arcade-style spaceship shooter built from scratch | `C++` |
+| 🤖 | [**Quant Agent**](https://github.com/KaranChavan21/Quant-Agent) | AI-powered trading agent that researches, signals & executes quant strategies autonomously | `Python` `LLM` |
 
 </div>
 
@@ -105,32 +106,12 @@ class KaranChavan:
 
 ---
 
-### 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=KaranChavan21&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7"/>
-
-</div>
-
----
-
-### 📉 Contribution Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=KaranChavan21&bg_color=0f0e17&color=818cf8&line=4f46e5&point=a78bfa&area=true&area_color=1e1b4b&hide_border=true&radius=8" width="95%"/>
-
-</div>
-
----
-
 ### 🤝 Let's Connect
 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-KaranChavan21-1e1b4b?style=for-the-badge&logo=github&logoColor=818cf8)](https://github.com/KaranChavan21)
-[![Email](https://img.shields.io/badge/Email-asphalt8123456@gmail.com-1e1b4b?style=for-the-badge&logo=gmail&logoColor=818cf8)](mailto:asphalt8123456@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Karan80121@gmail.com-1e1b4b?style=for-the-badge&logo=gmail&logoColor=818cf8)](mailto:Karan80121@gmail.com)
 
 <br/>
 
@@ -141,13 +122,8 @@ class KaranChavan:
 
 ---
 
-<!-- Snake contribution graph -->
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KaranChavan21/KaranChavan21/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KaranChavan21/KaranChavan21/output/github-contribution-grid-snake.svg">
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/KaranChavan21/KaranChavan21/output/github-contribution-grid-snake.svg" width="90%">
-</picture>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="80%"/>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
