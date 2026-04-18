@@ -19,7 +19,7 @@
 <tr>
 <td valign="top" width="55%">
 
-🎯 &nbsp; **Karan Chavan** — Quant Developer & ML Engineer
+🎯 &nbsp; **Karan Chavan** — Quant Researcher & Trader
 
 📊 &nbsp; Specialising in **Options Pricing**, **Algo Trading** & **Statistical Arbitrage**
 
