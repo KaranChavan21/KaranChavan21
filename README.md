@@ -13,25 +13,34 @@
 
 ---
 
-<img align="right" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="120" alt="chart"/>
+### 👨‍💻 About Me
 
-### `whoami`
+<table>
+<tr>
+<td valign="top" width="55%">
 
-```python
-class KaranChavan:
-    name        = "Karan Chavan"
-    role        = ["Quant Developer", "ML Engineer", "Algo Trader"]
-    languages   = ["Python", "C++", "SQL"]
-    interests   = ["Options Pricing", "Statistical Arbitrage",
-                   "Deep Learning", "IoT Systems", "Game Dev"]
-    open_to     = ["Quant Roles 📊", "ML Engineering 🤖", "SWE Positions 💻"]
-    currently   = "Building smarter models for financial markets 🚀"
+🎯 &nbsp; **Karan Chavan** — Quant Developer & ML Engineer
 
-    def say_hi(self):
-        print("Thanks for visiting — let's build something smart together!")
-```
+📊 &nbsp; Specialising in **Options Pricing**, **Algo Trading** & **Statistical Arbitrage**
 
-<br clear="right"/>
+🤖 &nbsp; Building intelligent systems at the intersection of **Finance × ML**
+
+💻 &nbsp; Writing in **Python**, **C++** and **SQL** daily
+
+🌱 &nbsp; Currently: *Building smarter models for financial markets 🚀*
+
+🟢 &nbsp; **Open to:** Quant Roles · ML Engineering · SWE Positions
+
+</td>
+<td valign="top" width="45%" align="center">
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="140" alt="chart"/>
+
+*"Thanks for visiting — let's build something smart together!"*
+
+</td>
+</tr>
+</table>
 
 ---
 
