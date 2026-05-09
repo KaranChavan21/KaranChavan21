@@ -97,17 +97,12 @@ Computes net dealer gamma from option chain, identifies positive/negative gamma 
 | Project | Description | Updated |
 |---|---|---|
 | [crypto-funding-rate-arbitrage](https://github.com/KaranChavan21/crypto-funding-rate-arbitrage) | Cross-exchange perpetual funding-rate arbitrage research | 2026-05 |
-| [btc-vrp-deep-hedging](https://github.com/KaranChavan21/btc-vrp-deep-hedging) | Systematic short-volatility BTC options strategy with deep hedging — Sharpe 6.60 OOS | 2026-05 |
+| [btc-vrp-deep-hedging](https://github.com/KaranChavan21/btc-vrp-deep-hedging) | Systematic short-volatility BTC + ETH options strategy with leak-free walk-forward LightGBM gating | 2026-05 |
 | [GEX_Dashboard](https://github.com/KaranChavan21/GEX_Dashboard) | Live dealer gamma exposure dashboard | 2026-05 |
 | [C-sharp-Ninjatrader-L1-L2-Logger](https://github.com/KaranChavan21/C-sharp-Ninjatrader-L1-L2-Logger) | NinjaTrader L1/L2 order book + trade tick logger (C#) | 2026-04 |
 | [Quant-Agent](https://github.com/KaranChavan21/Quant-Agent) | AI-powered trading agent — autonomous research, signal, execute pipeline | 2026-04 |
 | [QuantPortfolio](https://github.com/KaranChavan21/QuantPortfolio) | Quant portfolio optimization, risk modeling, allocation framework | 2026-04 |
 | [StatisticalArbitrage](https://github.com/KaranChavan21/StatisticalArbitrage) | Pair-trading strategy via cointegration & Z-score signals | 2025-12 |
-| [Final-Project-Asset-Pricing-BL-MBTE](https://github.com/KaranChavan21/Final-Project-Asset-Pricing-BL-MBTE) | Black-Litterman & model-based asset pricing research project | 2025-10 |
-| [Banknifty---Black-scholes-option-Tester](https://github.com/KaranChavan21/Banknifty---Black-scholes-option-Tester) | Options pricing engine with Greeks on BankNifty | 2025-09 |
-| [S-P-500-prediction-using-ML-and-DL](https://github.com/KaranChavan21/S-P-500-prediction-using-ML-and-DL) | Market forecasting with LSTM, XGBoost, ensembles | 2025-01 |
-| [SmartPrecisionAgricultureUsingIOT](https://github.com/KaranChavan21/SmartPrecisionAgricultureUsingIOT) | IoT-based smart agriculture monitoring system | 2024-05 |
-| [Spaceship-Game](https://github.com/KaranChavan21/Spaceship-Game) |  | 2023-02 |
 <!-- PROJECTS_LIST:END -->
 
 ---

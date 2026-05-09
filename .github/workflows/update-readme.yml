@@ -42,8 +42,15 @@ jobs:
 
           # Featured repos shown in the "Featured Projects" section above the list
           # — still INCLUDED in All Projects (just at the top).
-          # Profile repo + forks are excluded.
-          EXCLUDE_NAMES = {USER}      # the profile README repo itself
+          # Profile repo, forks, archives, and explicitly excluded repos all skipped.
+          EXCLUDE_NAMES = {
+              USER,                                       # profile README repo
+              "Final-Project-Asset-Pricing-BL-MBTE",      # academic group project
+              "Banknifty---Black-scholes-option-Tester",  # superseded by other projects
+              "S-P-500-prediction-using-ML-and-DL",       # early-stage learning project
+              "SmartPrecisionAgricultureUsingIOT",        # unrelated (undergrad IoT project)
+              "Spaceship-Game",                           # unrelated game project
+          }
 
           # Manual descriptions for repos with no GitHub description set.
           # Add new entries here if you want a custom blurb without editing the repo.
