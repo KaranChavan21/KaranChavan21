@@ -21,13 +21,13 @@
 
 🎯 &nbsp; **Karan Chavan** — MSc Quantitative Finance @ Singapore Management University
 
-📊 &nbsp; **Options pricing**, **deep hedging** (Buehler 2018), **variance risk premium** harvesting
+📊 &nbsp; Researching the intersection of **classical quant finance × machine learning**: options pricing, volatility modeling, deep hedging, and systematic strategy design.
 
-🤖 &nbsp; Building systematic strategies at the intersection of **classical quant finance × deep learning**
+🛠 &nbsp; End-to-end builder — from raw exchange ticks to executable strategies. Self-built data pipelines, leak-audited backtests, walk-forward ML.
 
-💻 &nbsp; **Python · PyTorch · Polars · C++ · SQL**
+💻 &nbsp; **Python · PyTorch · LightGBM · XGBoost · Polars · C++ · SQL**
 
-🌱 &nbsp; Currently: *Researching crypto options markets and neural-network hedging policies*
+🌱 &nbsp; Currently working on crypto options markets, funding-rate arbitrage, and dealer-gamma dashboards.
 
 🟢 &nbsp; **Open to:** Quant Research · ML Engineering · Systematic Trading roles
 
@@ -44,24 +44,70 @@
 
 ---
 
-### 🌟 Featured Project — *BTC Options VRP Strategy*
+### 🌟 Featured Projects
 
-<div align="center">
+<table>
+<tr>
+
+<td valign="top" width="33%">
 
 #### [📈 btc-vrp-deep-hedging](https://github.com/KaranChavan21/btc-vrp-deep-hedging)
 
-**Systematic short-volatility strategy on BTC options · Self-built tick-level data pipelines · Deep-learning hedging**
+Systematic short-volatility strategy on BTC + ETH options.
+Walk-forward LightGBM gating + vol-target sizing + full-friction path simulation.
 
-| Metric | Strategy | BTC Buy & Hold |
+`OOS Sharpe 3.7 (BTC) / 4.3 (ETH)`
+
+`Carr-Wu` `HAR-RV` `LightGBM` `Deep Hedging`
+
+</td>
+
+<td valign="top" width="33%">
+
+#### [💸 crypto-funding-rate-arbitrage](https://github.com/KaranChavan21/crypto-funding-rate-arbitrage)
+
+Cross-exchange perpetual funding-rate arbitrage research.
+Identifies persistent funding dislocations and builds delta-neutral capture strategies across major venues.
+
+`Multi-exchange` `Delta-neutral` `Perp basis`
+
+</td>
+
+<td valign="top" width="33%">
+
+#### [📊 GEX_Dashboard](https://github.com/KaranChavan21/GEX_Dashboard)
+
+Live dealer gamma exposure dashboard.
+Computes net dealer gamma from option chain, identifies positive/negative gamma regimes that drive intraday volatility.
+
+`GEX` `Dealer flows` `Real-time chain`
+
+</td>
+
+</tr>
+</table>
+
+---
+
+### 🚀 All Projects
+
+*Auto-updates daily via [GitHub Actions](.github/workflows/update-readme.yml).*
+
+<!-- PROJECTS_LIST:START -->
+| Project | Description | Updated |
 |---|---|---|
-| **Sharpe (OOS 2024–2026)** | **6.60** | 0.42 |
-| **Max Drawdown** | **−1.2%** | −50.5% |
-| **Annualized Return** | 22.7% (10× lev) | 20.7% |
-| **Win Rate** | 88% | — |
-
-`Carr-Wu (2009)` · `HAR-RV (Corsi)` · `SVI surface` · `Buehler Deep Hedging` · `Whalley-Wilmott` · `Bootstrap CI`
-
-</div>
+| [btc-vrp-deep-hedging](https://github.com/KaranChavan21/btc-vrp-deep-hedging) | Systematic short-volatility BTC + ETH options strategy with leak-free walk-forward LightGBM gating | 2026-05 |
+| [crypto-funding-rate-arbitrage](https://github.com/KaranChavan21/crypto-funding-rate-arbitrage) | Cross-exchange perpetual funding-rate arbitrage research | 2026-05 |
+| [GEX_Dashboard](https://github.com/KaranChavan21/GEX_Dashboard) | Live dealer gamma exposure dashboard | 2026-05 |
+| [C-sharp-Ninjatrader-L1-L2-Logger](https://github.com/KaranChavan21/C-sharp-Ninjatrader-L1-L2-Logger) | NinjaTrader L1/L2 order book + trade tick logger (C#) | 2026-04 |
+| [Quant-Agent](https://github.com/KaranChavan21/Quant-Agent) | AI-powered trading agent — autonomous research, signal, execute pipeline | 2026-04 |
+| [QuantPortfolio](https://github.com/KaranChavan21/QuantPortfolio) | Quant portfolio optimization, risk modeling, allocation framework | 2026-04 |
+| [StatisticalArbitrage](https://github.com/KaranChavan21/StatisticalArbitrage) | Pair-trading strategy via cointegration & Z-score signals | 2025-12 |
+| [Final-Project-Asset-Pricing-BL-MBTE](https://github.com/KaranChavan21/Final-Project-Asset-Pricing-BL-MBTE) | Black-Litterman & model-based asset pricing research project | 2025-10 |
+| [Banknifty---Black-scholes-option-Tester](https://github.com/KaranChavan21/Banknifty---Black-scholes-option-Tester) | Options pricing engine with Greeks on BankNifty | 2025-09 |
+| [S-P-500-prediction-using-ML-and-DL](https://github.com/KaranChavan21/S-P-500-prediction-using-ML-and-DL) | Market forecasting with LSTM, XGBoost, ensembles | 2025-01 |
+| [SmartPrecisionAgricultureUsingIOT](https://github.com/KaranChavan21/SmartPrecisionAgricultureUsingIOT) | IoT-based smart agriculture monitoring system | 2024-05 |
+<!-- PROJECTS_LIST:END -->
 
 ---
 
@@ -73,6 +119,7 @@
 
 ![Python](https://img.shields.io/badge/Python-1e1b4b?style=for-the-badge&logo=python&logoColor=818cf8)
 ![C++](https://img.shields.io/badge/C++-1e1b4b?style=for-the-badge&logo=cplusplus&logoColor=818cf8)
+![C#](https://img.shields.io/badge/C%23-1e1b4b?style=for-the-badge&logo=csharp&logoColor=818cf8)
 ![SQL](https://img.shields.io/badge/SQL-1e1b4b?style=for-the-badge&logo=postgresql&logoColor=818cf8)
 
 **Quant & Finance**
@@ -88,11 +135,12 @@
 **Data & ML**
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-1e1b4b?style=for-the-badge&logo=pytorch&logoColor=818cf8)
+![LightGBM](https://img.shields.io/badge/LightGBM-1e1b4b?style=for-the-badge&logoColor=818cf8)
+![XGBoost](https://img.shields.io/badge/XGBoost-1e1b4b?style=for-the-badge&logoColor=818cf8)
 ![NumPy](https://img.shields.io/badge/NumPy-1e1b4b?style=for-the-badge&logo=numpy&logoColor=818cf8)
 ![Polars](https://img.shields.io/badge/Polars-1e1b4b?style=for-the-badge&logo=polars&logoColor=818cf8)
 ![Pandas](https://img.shields.io/badge/Pandas-1e1b4b?style=for-the-badge&logo=pandas&logoColor=818cf8)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1e1b4b?style=for-the-badge&logo=scikitlearn&logoColor=818cf8)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-1e1b4b?style=for-the-badge&logo=tensorflow&logoColor=818cf8)
 ![Jupyter](https://img.shields.io/badge/Jupyter-1e1b4b?style=for-the-badge&logo=jupyter&logoColor=818cf8)
 
 **Tools**
@@ -101,23 +149,6 @@
 ![GitHub](https://img.shields.io/badge/GitHub-1e1b4b?style=for-the-badge&logo=github&logoColor=818cf8)
 ![VS Code](https://img.shields.io/badge/VS_Code-1e1b4b?style=for-the-badge&logo=visualstudiocode&logoColor=818cf8)
 ![LaTeX](https://img.shields.io/badge/LaTeX-1e1b4b?style=for-the-badge&logo=latex&logoColor=818cf8)
-
-</div>
-
----
-
-### 🚀 Other Projects
-
-<div align="center">
-
-| # | Project | What it does | Stack |
-|---|---------|-------------|-------|
-| 📈 | [**BTC VRP Deep Hedging**](https://github.com/KaranChavan21/btc-vrp-deep-hedging) | Short-vol BTC options strategy · Sharpe 6.60 OOS · neural net hedging | `Python` `PyTorch` `Polars` |
-| 🤖 | [**Quant Agent**](https://github.com/KaranChavan21/Quant-Agent) | AI-powered trading agent — autonomous research, signal, execute pipeline | `Python` `LLM` |
-| 📊 | [**BankNifty Black-Scholes Tester**](https://github.com/KaranChavan21/Banknifty---Black-scholes-option-Tester) | Options pricing engine with Greeks on BankNifty | `Python` |
-| 💹 | [**Statistical Arbitrage**](https://github.com/KaranChavan21/StatisticalArbitrage) | Pair-trading strategy via cointegration & Z-score signals | `Python` |
-| 📉 | [**S&P 500 ML/DL Predictor**](https://github.com/KaranChavan21/S-P-500-prediction-using-ML-and-DL) | Market forecasting with LSTM, XGBoost, ensembles | `Python` `TF` |
-| 💰 | [**Asset Pricing BL-MBTE**](https://github.com/KaranChavan21/Final-Project-Asset-Pricing-BL-MBTE) | Black-Litterman & model-based asset pricing research | `Jupyter` |
 
 </div>
 

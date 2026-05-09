@@ -1,0 +1,142 @@
+name: Auto-update README projects list
+
+on:
+  schedule:
+    # Run daily at 03:00 UTC — picks up any new repos created in the last 24h
+    - cron: "0 3 * * *"
+  workflow_dispatch:        # manual trigger from Actions tab
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-readme.yml"
+      - "scripts/build_projects_list.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build projects list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          python <<'PY'
+          import json
+          import os
+          import re
+          import urllib.request
+
+          USER = os.environ["GH_USER"]
+          TOKEN = os.environ["GH_TOKEN"]
+
+          # Featured repos shown in the "Featured Projects" section above the list
+          # — still INCLUDED in All Projects (just at the top).
+          # Profile repo + forks are excluded.
+          EXCLUDE_NAMES = {USER}      # the profile README repo itself
+
+          # Manual descriptions for repos with no GitHub description set.
+          # Add new entries here if you want a custom blurb without editing the repo.
+          MANUAL_DESC = {
+              "btc-vrp-deep-hedging": "Systematic short-volatility BTC + ETH options strategy with leak-free walk-forward LightGBM gating",
+              "crypto-funding-rate-arbitrage": "Cross-exchange perpetual funding-rate arbitrage research",
+              "GEX_Dashboard": "Live dealer gamma exposure dashboard",
+              "C-sharp-Ninjatrader-L1-L2-Logger": "NinjaTrader L1/L2 order book + trade tick logger (C#)",
+              "Quant-Agent": "AI-powered trading agent — autonomous research, signal, execute pipeline",
+              "QuantPortfolio": "Quant portfolio optimization, risk modeling, allocation framework",
+              "StatisticalArbitrage": "Pair-trading strategy via cointegration & Z-score signals",
+              "Final-Project-Asset-Pricing-BL-MBTE": "Black-Litterman & model-based asset pricing research project",
+              "Banknifty---Black-scholes-option-Tester": "Options pricing engine with Greeks on BankNifty",
+              "S-P-500-prediction-using-ML-and-DL": "Market forecasting with LSTM, XGBoost, ensembles",
+              "SmartPrecisionAgricultureUsingIOT": "IoT-based smart agriculture monitoring system",
+          }
+
+          def gh_api(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com{path}",
+                  headers={
+                      "Authorization": f"Bearer {TOKEN}",
+                      "Accept": "application/vnd.github+json",
+                      "User-Agent": "readme-updater",
+                  },
+              )
+              with urllib.request.urlopen(req) as r:
+                  return json.loads(r.read())
+
+          # Fetch all public repos (paginated)
+          all_repos = []
+          page = 1
+          while True:
+              page_repos = gh_api(f"/users/{USER}/repos?per_page=100&page={page}&sort=updated&type=public")
+              if not page_repos:
+                  break
+              all_repos.extend(page_repos)
+              if len(page_repos) < 100:
+                  break
+              page += 1
+
+          # Filter
+          repos = [
+              r for r in all_repos
+              if not r.get("fork")
+              and not r.get("archived")
+              and r.get("name") not in EXCLUDE_NAMES
+          ]
+
+          # Sort by updated_at descending (most recent first)
+          repos.sort(key=lambda r: r["updated_at"], reverse=True)
+
+          # Build markdown table
+          lines = ["| Project | Description | Updated |", "|---|---|---|"]
+          for r in repos:
+              name = r["name"]
+              desc = r.get("description") or MANUAL_DESC.get(name, "")
+              updated = r["updated_at"][:7]   # YYYY-MM
+              lines.append(f"| [{name}](https://github.com/{USER}/{name}) | {desc} | {updated} |")
+          new_block = "\n".join(lines)
+
+          # Replace section between markers in README.md
+          with open("README.md", "r") as f:
+              readme = f.read()
+
+          pattern = re.compile(
+              r"(<!-- PROJECTS_LIST:START -->)(.*?)(<!-- PROJECTS_LIST:END -->)",
+              re.DOTALL,
+          )
+          if not pattern.search(readme):
+              raise SystemExit("README.md missing PROJECTS_LIST markers — abort")
+
+          new_readme = pattern.sub(
+              lambda m: f"{m.group(1)}\n{new_block}\n{m.group(3)}",
+              readme,
+          )
+
+          if new_readme == readme:
+              print("No changes — projects list already up to date.")
+          else:
+              with open("README.md", "w") as f:
+                  f.write(new_readme)
+              print(f"README updated with {len(repos)} repos.")
+          PY
+
+      - name: Commit + push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git add README.md
+            git commit -m "chore: auto-update projects list"
+            git push
+          else
+            echo "No README changes."
+          fi
