@@ -7,7 +7,6 @@
 <br/>
 
 ![Open To Work](https://img.shields.io/badge/🟢_Open_To_Work-Quant_|_ML_|_SDE-4f46e5?style=for-the-badge&labelColor=1e1b4b)
-![Profile Views](https://komarev.com/ghpvc/?username=KaranChavan21&style=for-the-badge&color=4f46e5&label=PROFILE+VIEWS&labelColor=1e1b4b)
 
 </div>
 
