@@ -95,7 +95,7 @@ Computes net dealer gamma from option chain, identifies positive/negative gamma 
 <!-- PROJECTS_LIST:START -->
 | Project | Description | Updated |
 |---|---|---|
-| [GEX_Dashboard](https://github.com/KaranChavan21/GEX_Dashboard) | Live dealer gamma exposure dashboard | 2026-06 |
+| [GEX_Dashboard](https://github.com/KaranChavan21/GEX_Dashboard) | Live dealer gamma exposure dashboard | 2026-07 |
 | [btc-vrp-deep-hedging](https://github.com/KaranChavan21/btc-vrp-deep-hedging) | Systematic short-volatility BTC/ETH options strategy with deep hedging  | 2026-05 |
 | [crypto-funding-rate-arbitrage](https://github.com/KaranChavan21/crypto-funding-rate-arbitrage) | Cross-exchange perpetual funding-rate arbitrage research | 2026-05 |
 | [C-sharp-Ninjatrader-L1-L2-Logger](https://github.com/KaranChavan21/C-sharp-Ninjatrader-L1-L2-Logger) | NinjaTrader L1/L2 order book + trade tick logger (C#) | 2026-04 |
